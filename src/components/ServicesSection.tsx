@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { ArrowRight } from "lucide-react";
 
 interface ServiceCategory {
@@ -59,65 +58,37 @@ const services: ServiceCategory[] = [
   },
 ];
 
-const ServiceCard = ({ service, index }: { service: ServiceCategory; index: number }) => {
-  const [isHovered, setIsHovered] = useState(false);
-
-  // Alternate card heights for visual interest
-  const heightClass = index % 3 === 0 ? "md:row-span-2" : "";
-
+const ServiceCard = ({ service }: { service: ServiceCategory }) => {
   return (
-    <article
-      className={`editorial-card group relative cursor-pointer overflow-hidden ${heightClass}`}
-      onMouseEnter={() => setIsHovered(true)}
-      onMouseLeave={() => setIsHovered(false)}
-    >
-      {/* Gradient Background */}
-      <div className="absolute inset-0 bg-gradient-to-br from-secondary via-card to-accent/30 transition-all duration-500 group-hover:from-accent/40 group-hover:to-secondary" />
+    <article className="group cursor-pointer rounded-2xl border border-border bg-card p-6 shadow-sm transition-all duration-300 hover:shadow-lg hover:-translate-y-1">
+      {/* Category Name */}
+      <h3 className="editorial-heading mb-2 text-lg text-foreground">
+        {service.name}
+      </h3>
       
-      {/* Decorative Element */}
-      <div className="absolute -right-8 -top-8 h-32 w-32 rounded-full bg-accent/20 transition-transform duration-500 group-hover:scale-150" />
+      {/* Descriptor */}
+      <p className="mb-4 font-sans text-sm leading-relaxed text-muted-foreground">
+        {service.descriptor}
+      </p>
 
-      {/* Content */}
-      <div className="relative flex h-full min-h-[280px] flex-col justify-between p-6 md:p-8">
-        <div>
-          {/* Category Name */}
-          <h3 className="editorial-heading mb-3 text-xl text-foreground md:text-2xl">
-            {service.name}
-          </h3>
-          
-          {/* Descriptor */}
-          <p className="font-sans text-sm leading-relaxed text-muted-foreground">
-            {service.descriptor}
+      {/* Treatments List */}
+      <div className="mb-4 space-y-1">
+        {service.treatments.slice(0, 3).map((treatment, idx) => (
+          <p key={idx} className="font-sans text-xs text-foreground/70">
+            • {treatment}
           </p>
+        ))}
+        {service.treatments.length > 3 && (
+          <p className="font-sans text-xs text-muted-foreground">
+            + {service.treatments.length - 3} more
+          </p>
+        )}
+      </div>
 
-          {/* Treatments List - Shown on Hover */}
-          <div
-            className={`mt-4 space-y-1 transition-all duration-300 ${
-              isHovered ? "opacity-100 max-h-40" : "opacity-0 max-h-0"
-            } overflow-hidden`}
-          >
-            {service.treatments.slice(0, 4).map((treatment, idx) => (
-              <p key={idx} className="font-sans text-xs text-muted-foreground/80">
-                • {treatment}
-              </p>
-            ))}
-            {service.treatments.length > 4 && (
-              <p className="font-sans text-xs text-muted-foreground/60">
-                + {service.treatments.length - 4} more
-              </p>
-            )}
-          </div>
-        </div>
-
-        {/* Hover CTA */}
-        <div
-          className={`flex items-center gap-2 font-sans text-sm text-primary transition-all duration-300 ${
-            isHovered ? "opacity-100 translate-y-0" : "opacity-0 translate-y-2"
-          }`}
-        >
-          <span>Explore treatments</span>
-          <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
-        </div>
+      {/* CTA */}
+      <div className="flex items-center gap-2 font-sans text-sm text-primary transition-colors group-hover:text-primary/80">
+        <span>Explore treatments</span>
+        <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
       </div>
     </article>
   );
@@ -141,10 +112,10 @@ const ServicesSection = () => {
           </p>
         </div>
 
-        {/* Service Cards Grid */}
-        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-          {services.map((service, index) => (
-            <ServiceCard key={service.id} service={service} index={index} />
+        {/* Service Cards Grid - Simple 4x2 */}
+        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          {services.map((service) => (
+            <ServiceCard key={service.id} service={service} />
           ))}
         </div>
 
