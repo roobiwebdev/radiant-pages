@@ -17,11 +17,15 @@ const CTASection = () => {
 
           {/* CTAs */}
           <div className="flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
-            <Button variant="editorial" size="editorial-lg">
-              Begin your consultation
+            <Button variant="editorial" size="editorial-lg" asChild>
+              <a href="https://bodiesbyrs.as.me/schedule/5732e964" target="_blank" rel="noopener noreferrer">
+                Begin your consultation
+              </a>
             </Button>
-            <Button variant="editorial-ghost" size="editorial">
-              Questions? Get in touch
+            <Button variant="editorial-ghost" size="editorial" asChild>
+              <a href="#contact">
+                Questions? Get in touch
+              </a>
             </Button>
           </div>
 
@@ -31,10 +35,12 @@ const CTASection = () => {
               Returning Client?
             </p>
             <p className="editorial-body mb-6 text-lg">
-              Welcome back. Your account and treatment history are just a click away.
+              Welcome back. Access your ongoing sessions, courses & packages.
             </p>
-            <Button variant="editorial-outline" size="editorial">
-              Access your account
+            <Button variant="editorial-outline" size="editorial" asChild>
+              <a href="https://bodiesbyrs.as.me/schedule/5732e964" target="_blank" rel="noopener noreferrer">
+                Book your next session
+              </a>
             </Button>
           </div>
         </div>
