@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import heroImage from "@/assets/hero-image.jpg";
+import heroImage from "@/assets/hero-aesthetics.jpg";
 
 const HeroSection = () => {
   return (
@@ -11,7 +11,7 @@ const HeroSection = () => {
           alt="Premium aesthetics and body contouring"
           className="h-full w-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-background/95 via-background/60 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-r from-background/95 via-background/70 to-transparent" />
       </div>
 
       {/* Content */}
@@ -32,17 +32,25 @@ const HeroSection = () => {
 
             {/* Subheading */}
             <p className="editorial-body mb-12 max-w-lg text-lg leading-relaxed animate-fade-up stagger-2 md:text-xl">
-              Refined treatments and thoughtful results. We combine modern techniques 
+              From body contouring to facial aesthetics, we combine modern techniques 
               with expert care to help you feel confident in your transformation.
             </p>
 
             {/* CTAs */}
             <div className="flex flex-wrap gap-4 animate-fade-up stagger-3">
-              <Button variant="editorial" size="editorial-lg">
-                Begin your consultation
+              <Button 
+                variant="editorial" 
+                size="editorial-lg"
+                asChild
+              >
+                <a href="https://bodiesbyrs.as.me/schedule/5732e964" target="_blank" rel="noopener noreferrer">
+                  Begin your consultation
+                </a>
               </Button>
-              <Button variant="editorial-outline" size="editorial-lg">
-                Explore treatments
+              <Button variant="editorial-outline" size="editorial-lg" asChild>
+                <a href="#treatments">
+                  Explore treatments
+                </a>
               </Button>
             </div>
           </div>

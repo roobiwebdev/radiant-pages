@@ -49,8 +49,10 @@ const Navigation = () => {
           >
             Contact
           </a>
-          <Button variant="editorial" size="default">
-            Book Now
+          <Button variant="editorial" size="default" asChild>
+            <a href="https://bodiesbyrs.as.me/schedule/5732e964" target="_blank" rel="noopener noreferrer">
+              Book Now
+            </a>
           </Button>
         </div>
 
@@ -104,8 +106,11 @@ const Navigation = () => {
               size="editorial"
               className="mt-4 w-full"
               onClick={() => setIsMobileMenuOpen(false)}
+              asChild
             >
-              Book Now
+              <a href="https://bodiesbyrs.as.me/schedule/5732e964" target="_blank" rel="noopener noreferrer">
+                Book Now
+              </a>
             </Button>
           </div>
         </div>
