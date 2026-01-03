@@ -25,8 +25,16 @@ const Navigation = () => {
     >
       <nav className="container mx-auto flex h-20 items-center justify-between px-6 lg:px-12">
         {/* Logo */}
-        <a href="/" className="editorial-heading text-xl md:text-2xl">
-          Bodies by RS
+        <a href="/" className="flex items-baseline gap-1.5 transition-opacity hover:opacity-90">
+          <span className="font-serif text-2xl md:text-3xl font-bold tracking-wide text-foreground drop-shadow-[2px_2px_0px_rgba(0,0,0,0.15)]">
+            BODIES
+          </span>
+          <span className="font-serif text-lg md:text-xl italic font-medium text-foreground">
+            by
+          </span>
+          <span className="font-serif text-2xl md:text-3xl font-bold tracking-wide text-primary drop-shadow-[2px_2px_0px_rgba(0,0,0,0.15)]">
+            RS
+          </span>
         </a>
 
         {/* Desktop Navigation */}

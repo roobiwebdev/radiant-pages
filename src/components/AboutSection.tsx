@@ -4,94 +4,64 @@ const AboutSection = () => {
   return (
     <section className="hero-gradient-bg py-24 md:py-32">
       <div className="container mx-auto px-6 lg:px-12">
-        <div className="grid gap-16 lg:grid-cols-2 lg:gap-24">
+        <div className="grid gap-16 lg:grid-cols-2 lg:gap-24 items-start">
           {/* Left Column - Philosophy */}
           <div>
             <p className="mb-4 font-sans text-sm uppercase tracking-[0.25em] text-muted-foreground">
-              Our Philosophy
+              A Healing Sanctuary
             </p>
             <h2 className="editorial-heading mb-8 text-4xl md:text-5xl">
-              Where expertise meets intention
+              Restoring Harmony
             </h2>
             <div className="space-y-6">
               <p className="editorial-body text-lg leading-relaxed">
-                At Bodies by RS, we believe transformation should feel like a 
-                collaboration—not a transaction. Every treatment begins with 
-                listening, understanding your vision, and crafting a path that 
-                honours both your goals and your wellbeing.
+                Rhea joins us with over 5 years’ experience as an Advanced Beauty Practitioner, bringing a uniquely ethical, grounded and heart-led approach to aesthetics to our healing sanctuary.
               </p>
               <p className="editorial-body text-lg leading-relaxed">
-                Our approach combines advanced techniques with a deep respect 
-                for natural beauty. We don't chase trends; we focus on results 
-                that feel authentic to who you are.
+                At Holistic Rising, healing is about restoring harmony to your whole system — energetically, physically and emotionally — not just changing what you see on the surface. Here, we walk beside you through your journey with presence, care and deep respect for your unique experience.
+              </p>
+              <p className="editorial-body text-lg leading-relaxed italic text-primary">
+                Rhea embodies this philosophy fully.
               </p>
             </div>
 
-            {/* Trust Indicators */}
-            <div className="mt-12 grid gap-8 sm:grid-cols-3">
-              <div className="flex flex-col items-start gap-3">
-                <div className="flex h-12 w-12 items-center justify-center rounded-full bg-accent">
-                  <Award className="h-5 w-5 text-accent-foreground" />
-                </div>
-                <div>
-                  <p className="font-serif text-2xl font-medium text-foreground">15+</p>
-                  <p className="font-sans text-sm text-muted-foreground">Years of expertise</p>
-                </div>
-              </div>
-              <div className="flex flex-col items-start gap-3">
-                <div className="flex h-12 w-12 items-center justify-center rounded-full bg-accent">
-                  <Heart className="h-5 w-5 text-accent-foreground" />
-                </div>
-                <div>
-                  <p className="font-serif text-2xl font-medium text-foreground">5,000+</p>
-                  <p className="font-sans text-sm text-muted-foreground">Happy clients</p>
-                </div>
-              </div>
-              <div className="flex flex-col items-start gap-3">
-                <div className="flex h-12 w-12 items-center justify-center rounded-full bg-accent">
-                  <Sparkles className="h-5 w-5 text-accent-foreground" />
-                </div>
-                <div>
-                  <p className="font-serif text-2xl font-medium text-foreground">Premium</p>
-                  <p className="font-sans text-sm text-muted-foreground">Only treatments</p>
-                </div>
-              </div>
+            {/* What Makes Rhea Different List */}
+            <div className="mt-12">
+                <h3 className="editorial-heading text-2xl mb-6">What makes Rhea different? 💗</h3>
+                <ul className="space-y-4">
+                    {[
+                        "Her work is rooted in compassion, intention and respect for each person’s healing path",
+                        "She blends her healing energy alongside her advanced aesthetic expertise",
+                        "Her approach supports subtle rejuvenation that helps you feel like your true self again — refreshed, restored, and realigned, not “altered” or unfamiliar",
+                        "Every treatment is delivered with ethical integrity, deep product knowledge and a nurturing, grounded presence",
+                        "She works with a trusted medical prescriber who oversees any necessary prescriptions with careful diligence and clinical oversight"
+                    ].map((item, i) => (
+                        <li key={i} className="flex gap-3 text-muted-foreground leading-relaxed">
+                            <span className="text-primary mt-1">•</span>
+                            <span>{item}</span>
+                        </li>
+                    ))}
+                </ul>
             </div>
           </div>
 
-          {/* Right Column - Team Introduction */}
-          <div className="flex flex-col justify-center">
+          {/* Right Column - Secondary Text */}
+          <div className="flex flex-col justify-center space-y-8">
             <div className="editorial-card p-8 md:p-12">
-              <p className="mb-4 font-sans text-sm uppercase tracking-[0.25em] text-muted-foreground">
-                Meet the Team
-              </p>
-              <h3 className="editorial-heading mb-6 text-3xl md:text-4xl">
-                Welcome, Ria
-              </h3>
               <p className="editorial-body mb-6 text-lg leading-relaxed">
-                We're delighted to welcome Ria to the Bodies by RS family. 
-                With her exceptional attention to detail and warm, client-centred 
-                approach, Ria brings fresh expertise to our team while upholding 
-                the standards of care you've come to expect.
+                We know so many of us feel depleted by stress, exhaustion, emotional weight or the everyday demands of life — juggling careers, family, emotional challenges, physical ailments, or simply the invisible load of doing it all.
               </p>
-              <p className="editorial-body text-lg leading-relaxed">
-                Whether you're a returning client or new to our practice, Ria 
-                is ready to guide you through your aesthetic journey with the 
-                same dedication and professionalism that defines our brand.
+              <p className="editorial-body text-lg leading-relaxed font-medium text-foreground">
+                Sometimes a small aesthetic adjustment — when delivered with care, ethics and the right healing intention — can do more than refresh your appearance; it can help you reconnect with your confidence, your vitality and your sense of self again. 🌟
               </p>
-              <div className="mt-8 flex items-center gap-4">
-                <div className="h-16 w-16 overflow-hidden rounded-full bg-secondary">
-                  <img
-                    src="https://images.unsplash.com/photo-1594744803329-e58b31de8bf5?w=200&h=200&fit=crop&crop=face"
-                    alt="Ria - Aesthetics Specialist"
-                    className="h-full w-full object-cover"
+            </div>
+            
+            <div className="aspect-[4/5] w-full overflow-hidden rounded-2xl bg-secondary">
+                 <img
+                    src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=800&q=80"
+                    alt="Holistic Care"
+                    className="h-full w-full object-cover hover:scale-105 transition-all duration-700"
                   />
-                </div>
-                <div>
-                  <p className="font-serif text-lg font-medium text-foreground">Ria</p>
-                  <p className="font-sans text-sm text-muted-foreground">Aesthetics Specialist</p>
-                </div>
-              </div>
             </div>
           </div>
         </div>

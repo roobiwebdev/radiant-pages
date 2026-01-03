@@ -7,7 +7,17 @@ const Footer = () => {
         <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-4">
           {/* Brand Column */}
           <div className="lg:col-span-2">
-            <h3 className="editorial-heading mb-4 text-2xl">Bodies by RS</h3>
+            <div className="mb-4 flex items-baseline gap-1.5 hover:opacity-90">
+              <span className="font-serif text-2xl md:text-3xl font-bold tracking-wide text-foreground drop-shadow-[2px_2px_0px_rgba(0,0,0,0.15)]">
+                BODIES
+              </span>
+              <span className="font-serif text-lg md:text-xl italic font-medium text-foreground">
+                by
+              </span>
+              <span className="font-serif text-2xl md:text-3xl font-bold tracking-wide text-primary drop-shadow-[2px_2px_0px_rgba(0,0,0,0.15)]">
+                RS
+              </span>
+            </div>
             <p className="editorial-body mb-6 max-w-sm text-base leading-relaxed">
               Expert-led aesthetics and body contouring. Modern techniques, 
               thoughtful care, refined results.

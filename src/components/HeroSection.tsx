@@ -8,20 +8,17 @@ const HeroSection = () => {
         <div className="mx-auto max-w-3xl">
           {/* Tagline */}
           <p className="mb-6 font-sans text-sm uppercase tracking-[0.25em] text-muted-foreground animate-fade-up">
-            Aesthetics & Body Contouring
+            New at Holistic Rising
           </p>
 
           {/* Heading */}
           <h1 className="editorial-heading mb-8 text-5xl leading-[1.1] animate-fade-up stagger-1 md:text-6xl lg:text-7xl">
-            Expert care,
-            <br />
-            <em className="font-normal">designed around you</em>
+            Introducing Rhea <span className="text-muted-foreground inline-block">🌿</span>
           </h1>
 
           {/* Subheading */}
-          <p className="editorial-body mx-auto mb-12 max-w-xl text-lg leading-relaxed animate-fade-up stagger-2 md:text-xl">
-            From body contouring to facial aesthetics, we combine modern techniques 
-            with expert care to help you feel confident in your transformation.
+          <p className="editorial-body mx-auto mb-12 max-w-2xl text-lg leading-relaxed animate-fade-up stagger-2 md:text-xl">
+            We’re so excited to welcome Rhea founder of Bodies By RS to the Holistic Rising family, forming a beautiful partnership rooted in ethics, healing and compassionate aesthetic care.
           </p>
 
           {/* CTAs */}
@@ -31,13 +28,13 @@ const HeroSection = () => {
               size="editorial-lg"
               asChild
             >
-              <a href="https://bodiesbyrs.as.me/schedule/5732e964" target="_blank" rel="noopener noreferrer">
-                Begin your consultation
+              <a href="#about">
+                Read our story
               </a>
             </Button>
             <Button variant="editorial-outline" size="editorial-lg" asChild>
               <a href="#treatments">
-                Explore treatments
+               View Treatments
               </a>
             </Button>
           </div>
