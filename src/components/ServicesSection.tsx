@@ -69,7 +69,7 @@ const ServiceCard = ({ service, index }: { service: ServiceCategory; index: numb
 
 const ServicesSection = () => {
   return (
-    <section className="py-24 md:py-32 bg-zinc-50 dark:bg-zinc-900/30">
+    <section className="py-24 md:py-32 bg-secondary/50 dark:bg-secondary/30">
       <div className="container mx-auto px-6 lg:px-12">
         {/* Section Header */}
         <div className="mb-16 max-w-3xl">

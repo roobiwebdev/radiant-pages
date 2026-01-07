@@ -8,13 +8,13 @@ const Footer = () => {
           {/* Brand Column */}
           <div className="lg:col-span-2">
             <div className="mb-4 flex items-baseline gap-1.5 hover:opacity-90">
-              <span className="font-serif text-2xl md:text-3xl font-bold tracking-wide text-foreground drop-shadow-[2px_2px_0px_rgba(0,0,0,0.15)]">
+              <span className="font-serif text-2xl md:text-3xl font-bold tracking-wide text-foreground">
                 BODIES
               </span>
               <span className="font-serif text-lg md:text-xl italic font-medium text-foreground">
                 by
               </span>
-              <span className="font-serif text-2xl md:text-3xl font-bold tracking-wide text-primary drop-shadow-[2px_2px_0px_rgba(0,0,0,0.15)]">
+              <span className="font-serif text-2xl md:text-3xl font-bold tracking-wide text-primary">
                 RS
               </span>
             </div>
