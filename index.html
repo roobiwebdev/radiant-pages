@@ -1,37 +1,39 @@
 <!doctype html>
 <html lang="en" class="light">
-  <head>
-    <script>
-      (function() {
-        const stored = localStorage.getItem('theme');
-        const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-        const theme = stored || (prefersDark ? 'dark' : 'light');
-        document.documentElement.classList.remove('light', 'dark');
-        document.documentElement.classList.add(theme);
-      })();
-    </script>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Holistic Rising — Introducing Rhea | Ethical Aesthetics</title>
-    <meta name="description" content="We’re so excited to welcome Rhea, founder of Bodies By RS, to the Holistic Rising family. Ethical, grounded, and heart-led aesthetic care." />
-    <meta name="author" content="Holistic Rising" />
 
-    <meta property="og:title" content="Holistic Rising — Introducing Rhea" />
-    <meta property="og:description" content="Ethical, grounded, and heart-led aesthetic care. Welcome Rhea to the Holistic Rising family." />
-    <meta property="og:type" content="website" />
-    <!-- <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" /> -->
+<head>
+  <script>
+    (function () {
+      const stored = localStorage.getItem('theme');
+      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      const theme = stored || (prefersDark ? 'dark' : 'light');
+      document.documentElement.classList.remove('light', 'dark');
+      document.documentElement.classList.add(theme);
+    })();
+  </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Holistic Rising — Introducing Rhea | Ethical Aesthetics</title>
+  <meta name="description"
+    content="We’re so excited to welcome Rhea, founder of Bodies By RS, to the Holistic Rising family. Ethical, grounded, and heart-led aesthetic care." />
+  <meta name="author" content="Holistic Rising" />
 
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@Bodiesbyrs" />
-    <!-- <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" /> -->
-    
-    <link rel="icon" type="image/jpeg" href="/logo.jpeg" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  </head>
+  <meta property="og:title" content="Holistic Rising — Introducing Rhea" />
+  <meta property="og:description"
+    content="Ethical, grounded, and heart-led aesthetic care. Welcome Rhea to the Holistic Rising family." />
+  <meta property="og:type" content="website" />
 
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@Bodiesbyrs" />
+
+  <link rel="icon" type="image/jpeg" href="/logo.jpeg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+</head>
+
+<body>
+  <div id="root"></div>
+  <script type="module" src="/src/main.tsx"></script>
+</body>
+
 </html>
