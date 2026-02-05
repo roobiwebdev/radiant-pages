@@ -19,7 +19,7 @@ const Footer = () => {
               </span>
             </div>
             <p className="editorial-body mb-6 max-w-sm text-base leading-relaxed">
-              Expert-led aesthetics and body contouring. Modern techniques, 
+              Expert-led aesthetics and body contouring. Modern techniques,
               thoughtful care, refined results.
             </p>
             <div className="flex gap-4">

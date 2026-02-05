@@ -27,21 +27,21 @@ const AboutSection = () => {
 
             {/* What Makes Rhea Different List */}
             <div className="mt-12">
-                <h3 className="editorial-heading text-2xl mb-6">What makes Rhea different? 💗</h3>
-                <ul className="space-y-4">
-                    {[
-                        "Her work is rooted in compassion, intention and respect for each person’s healing path",
-                        "She blends her healing energy alongside her advanced aesthetic expertise",
-                        "Her approach supports subtle rejuvenation that helps you feel like your true self again — refreshed, restored, and realigned, not “altered” or unfamiliar",
-                        "Every treatment is delivered with ethical integrity, deep product knowledge and a nurturing, grounded presence",
-                        "She works with a trusted medical prescriber who oversees any necessary prescriptions with careful diligence and clinical oversight"
-                    ].map((item, i) => (
-                        <li key={i} className="flex gap-3 text-muted-foreground leading-relaxed">
-                            <span className="text-primary mt-1">•</span>
-                            <span>{item}</span>
-                        </li>
-                    ))}
-                </ul>
+              <h3 className="editorial-heading text-2xl mb-6">What makes Rhea different? 💗</h3>
+              <ul className="space-y-4">
+                {[
+                  "Her work is rooted in compassion, intention and respect for each person’s healing path",
+                  "She blends her healing energy alongside her advanced aesthetic expertise",
+                  "Her approach supports subtle rejuvenation that helps you feel like your true self again — refreshed, restored, and realigned, not “altered” or unfamiliar",
+                  "Every treatment is delivered with ethical integrity, deep product knowledge and a nurturing, grounded presence",
+                  "She works with a trusted medical prescriber who oversees any necessary prescriptions with careful diligence and clinical oversight"
+                ].map((item, i) => (
+                  <li key={i} className="flex gap-3 text-muted-foreground leading-relaxed">
+                    <span className="text-primary mt-1">•</span>
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
             </div>
           </div>
 
@@ -55,13 +55,13 @@ const AboutSection = () => {
                 Sometimes a small aesthetic adjustment — when delivered with care, ethics and the right healing intention — can do more than refresh your appearance; it can help you reconnect with your confidence, your vitality and your sense of self again. 🌟
               </p>
             </div>
-            
-            <div className="aspect-[4/5] w-full overflow-hidden rounded-2xl bg-secondary">
-                 <img
-                    src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=800&q=80"
-                    alt="Holistic Care"
-                    className="h-full w-full object-cover hover:scale-105 transition-all duration-700"
-                  />
+
+            <div className="aspect-[4/5] w-full overflow-hidden rounded-2xl bg-secondary shadow-xl">
+              <img
+                src="/assets/img5.jpeg"
+                alt="Rhea's aesthetic care"
+                className="h-full w-full object-cover hover:scale-105 transition-all duration-700"
+              />
             </div>
           </div>
         </div>

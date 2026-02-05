@@ -19,6 +19,7 @@ const Navigation = () => {
 
   const navLinks = [
     { name: "Treatments", href: "#treatments" },
+    { name: "Results", href: "#results" },
     { name: "About", href: "#about" },
     { name: "Contact", href: "#contact" },
   ];
@@ -28,21 +29,19 @@ const Navigation = () => {
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-      className={`fixed left-0 right-0 top-0 z-50 transition-all duration-500 ${
-        isScrolled ? "top-4 px-4" : "top-0 px-0"
-      }`}
+      className={`fixed left-0 right-0 top-0 z-50 transition-all duration-500 ${isScrolled ? "top-4 px-4" : "top-0 px-0"
+        }`}
     >
       <div
-        className={`mx-auto transition-all duration-500 ease-in-out ${
-          isScrolled
-            ? "max-w-5xl rounded-full bg-background/80 backdrop-blur-xl border border-border/50 shadow-[0_8px_32px_rgba(0,0,0,0.1)] dark:shadow-[0_8px_32px_rgba(0,0,0,0.3)] px-8"
-            : "max-w-full bg-transparent px-6 lg:px-12"
-        } flex items-center h-20`}
+        className={`mx-auto transition-all duration-500 ease-in-out ${isScrolled
+          ? "max-w-5xl rounded-full bg-background/80 backdrop-blur-xl border border-border/50 shadow-[0_8px_32px_rgba(0,0,0,0.1)] dark:shadow-[0_8px_32px_rgba(0,0,0,0.3)] px-8"
+          : "max-w-full bg-transparent px-6 lg:px-12"
+          } flex items-center h-20`}
       >
         {/* Logo - Left */}
         <div className="flex-1 flex justify-start">
-          <a 
-            href="/" 
+          <a
+            href="/"
             className="flex items-baseline gap-1.5 transition-all hover:opacity-80 active:scale-95 group"
           >
             <span className="font-serif text-2xl md:text-3xl font-bold tracking-tight text-foreground transition-colors group-hover:text-primary">
